@@ -1,0 +1,231 @@
+<!DOCTYPE html >
+<!-----------------
+MeLicensed Mobile App
+by Ryan Poole 
+Based on the Peter Cox Sandbox Mobile App
+This page is a sample website, with multiple pages within one page
+---------------->
+<html>
+<head> 
+    	<title>MeLicensed</title> 
+    	<!--this allows the interface to be viewed on a mobile device-->
+ 	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../../Downloads/sandbox2018/css/jquery.mobile-1.4.0.min.css" /> 
+        <link rel="stylesheet" href="../../../Downloads/sandbox2018/css/jquery.mobile.icons-1.4.0.min.css" />
+        <link rel="stylesheet" href="../../../Downloads/sandbox2018/css/jquery.mobile.structure-1.4.0.css" />
+        <!--JQUERY-->
+        <script src="../../../Downloads/sandbox2018/js/jquery-1.8.3.min.js"></script>
+        <!--This small script allow you to view your Mobile app locally-->
+        <script> 
+		$(document).bind('mobileinit',function()
+		{     $.mobile.changePage.defaults.changeHash = false;     
+		$.mobile.hashListeningEnabled = false;     
+		$.mobile.pushStateEnabled = false; });
+		</script>
+         <!--JQUERY MOBILE-->
+        <script src="../../../Downloads/sandbox2018/js/jquery.mobile-1.4.0.min.js"></script>
+</head>
+
+<!--body width="device-width"-->
+
+<body>	
+	
+<!--PAGE:  HOME-->
+    <div data-role="page" id="home">
+        <!-----------PANEL--------------------->
+        <div data-role="panel" id="homeNav" data-position="left" data-display="reveal">
+    		<ul data-role="listview" data-inset="true" data-split-icon="gear">
+                    <li> <a style="color:dodgerblue" href="#home">Home</a></li>
+                    <li> <a style="color:dodgerblue"href="#info">Info</a></li>
+				   <li> <a style="color:dodgerblue"href="#Licences">Licence</a></li>
+            </ul>                 
+            <a class="ui-btn ui-shadow ui-corner-all  ui-btn-mini" style="color:red" href="#homeNav">Close</a>	
+        </div><!-- /panel -->
+        
+		<!--HOME PAGE NAVIGATIONAL HEADER-->
+        <div data-role="header" >
+        	<a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-left ui-btn-icon-left ui-icon-bars" style="color:dodgerblue" href="#homeNav">Menu</a>
+			
+			<a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-right ui-btn-icon-right ui-icon-user"  style="color:dodgerblue" href="#login">Login</a>
+			
+            <h1 style="color:darkblue;text-align:center">MeLicensed</h1>
+
+     	</div><!-- /header -->
+
+		<!--HOME PAGE CONTENT-->
+		<!-- home content -->
+        <div role="main" class="ui-content"  >
+            <img src="../sandbox2018/images/MeLicensedImage.jpg" width="100%" alt="MeLicensed"/>
+			<h2 style="color:grey;text-align:center">Welcome to MeLicensed</h2>
+			<h4 style="color:grey;text-align:center">Store all of your licences in a convenient, secure environment.</h4>
+			<br><br>
+        </div>      
+        <!-- end home content -->
+
+		<!--HOME PAGE FOOTER-->
+        <div data-role="footer" data-position="fixed" >
+       <p align="center">©Ryan Poole 2018,  <a href="#T&C" > Terms & Conditions</a></p>
+        </div><!-- /footer -->
+        
+	</div>
+<!-- /end home page -->
+
+
+<!--PAGE: info  PAGE  -->
+    <div data-role="page" id="info">
+        <!-----------PANEL--------------------->
+        <div data-role="panel" id="homeNav1" data-position="left" data-display="reveal">
+    		<ul data-role="listview" data-inset="true" data-split-icon="gear">
+                    <li> <a href="#home">Home</a></li>
+                    <li> <a href="#info">Info</a></li>
+				   <li> <a href="#Licences">Licence</a></li>
+            </ul>                 
+            <a class="ui-btn ui-shadow ui-corner-all  ui-btn-mini  " href="#homeNav1">Close</a>	
+        </div><!-- /panel -->
+        
+		<!--info PAGE NAVIGATIONAL HEADER-->
+        <div data-role="header" >
+        	<a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-left ui-btn-icon-left ui-icon-bars"  href="#homeNav1">Menu</a>
+			
+			<a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-right ui-btn-icon-right ui-icon-user"  style="color:dodgerblue" href="#login">Login</a>
+			
+            <h1>MeLicensed</h1>
+     	</div><!-- /header -->
+
+		<!--info PAGE CONTENT-->
+        <div role="main" class="ui-content"  >
+        	<h1> Info</h1>
+            <a href="http://demos.jquerymobile.com/1.4.5/" target="_blank">JQuery Mobile Demos</a>  
+			<p>This is where you will get your FORM FIELD ELEMENTS to add to your app. <br><br><br> </p>
+
+             <a href="https://themeroller.jquerymobile.com/" target="_blank">ThemeRoller</a> 
+             <p> If you want to change the look and feel of this mobile app ThemeRoller will allow you to do so easily.</p> 
+              <br>
+        </div> 
+		<!-- info PAGE FOOTER-->
+        <div data-role="footer" data-position="fixed" >
+        <p align="center">©Ryan Poole 2018,  <a href="#T&C" > Terms & Conditions</a></p>
+        </div><!-- /footer -->
+        <!-- end page content -->
+		
+	</div>
+		
+
+        
+    <!--PAGE: Licence PAGE  -->
+    <div data-role="page" id="Licences">
+        <!-----------PANEL--------------------->
+        <div data-role="panel" id="LicencePage" data-position="left" data-display="reveal">
+    		<ul data-role="listview" data-inset="true" data-split-icon="gear">
+                    <li> <a href="#home">Home</a></li>
+					<li> <a href="#info">Info</a></li>
+                    <li> <a href="#Licences">Licence</a></li>
+            </ul>                 
+            <a class="ui-btn ui-shadow ui-corner-all  ui-btn-mini  " href="#LicencePage">Close</a>	
+        </div><!-- /panel -->
+        
+		<!--licence PAGE NAVIGATIONAL HEADER-->
+        <div data-role="header" >
+        	<a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-left ui-btn-icon-left ui-icon-bars"  href="#LicencePage">Menu</a>
+            <h1>MeLicensed</h1>
+     	</div><!-- /header -->
+
+		<!--licence PAGE CONTENT-->
+        <div role="main" class="ui-content"  >
+        	<h1>Licences</h1> 
+              <br>
+			<a href="https://themeroller.jquerymobile.com/" width="40%" class="ui-btn">Enter</a>
+        </div>        
+        <!-- end page content -->
+		
+		
+		<!--licence PAGE FOOTER-->
+        <div data-role="footer" data-position="fixed" >
+        <p align="center">©Ryan Poole 2018,  <a href="#T&C"> Terms & Conditions</a></p>
+        </div><!-- /footer -->
+        
+	</div><!-- /end licence page -->
+	
+	<!--PAGE: login  PAGE  -->
+    <div data-role="page" id="login">
+        <!-----------PANEL--------------------->
+        <div data-role="panel" id="LoginPage" data-position="left" data-display="reveal">
+    		<ul data-role="listview" data-inset="true" data-split-icon="gear">    
+                    <li> <a href="#home">Home</a></li>
+                    <li> <a href="#info">Info</a></li>
+				   <li> <a href="#Licences">Licence</a></li>
+            </ul>                 
+            <a class="ui-btn ui-shadow ui-corner-all  ui-btn-mini  " href="#LoginPage">Close</a>	
+        </div><!-- /panel -->
+        
+		<!--login PAGE NAVIGATIONAL HEADER-->
+        <div data-role="header" >
+			  	<a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-left ui-btn-icon-left ui-icon-home"  style="color:dodgerblue;text-align:center" href="#home">Home</a>
+			
+              	<h1 style="color:darkblue;text-align:center">MeLicensed</h1>
+     	</div><!-- /header -->
+
+		<!--login PAGE CONTENT-->
+        <div role="main" class="ui-content ui-shadow ui-corner-all" >
+
+        	  <h1 style="color:darkblue;text-align:left">Login</h1>
+             <label for="username">Username:</label>
+				<input type="text" name="username" id="username" placeholder="Your email address" data-mini="true" >
+			 <label for="password">Password:</label>
+			  <input type="password" name="password" id="password" placeholder="Password: 6-14 Character" data-mini="true">
+
+              <br>
+			<a href="#Licences" style="background-color:dodgerblue;color:white" 
+			   class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-bottom ui-btn-active">Log In</a>
+			
+			<p>Forgot your password? <a href="#">Click here</a></p>
+		
+        </div>   
+        <!-- end page content -->
+		
+		
+		<!--login PAGE FOOTER-->
+        <div data-role="footer" data-position="fixed" >
+        	<p align="center">©Ryan Poole 2018,  <a href="#T&C"> Terms & Conditions</a></p>
+        </div><!-- /footer -->
+        
+	</div>
+<!-- /end login page -->
+		
+		<!--PAGE: Terms & Conditions PAGE  -->
+    <div data-role="page" id="T&C">
+        <!-----------PANEL--------------------->
+        <div data-role="panel" id="T&CPage" data-position="left" data-display="reveal">
+    		<ul data-role="listview" data-inset="true" data-split-icon="gear">
+                    <li> <a href="#home">Home</a></li>
+					<li> <a href="#info">Info</a></li>
+                    <li> <a href="#Licences">Licence</a></li>
+            </ul>                 
+            <a class="ui-btn ui-shadow ui-corner-all  ui-btn-mini  " href="#T&CPage">Close</a>	
+        </div><!-- /panel -->
+        
+		<!--Terms & Conditions PAGE NAVIGATIONAL HEADER-->
+        <div data-role="header" >
+        	<a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-left ui-btn-icon-left ui-icon-bars"  href="#T&CPage">Menu</a>
+            <h1>MeLicensed</h1>
+     	</div><!-- /header -->
+
+		<!--Terms & Conditions PAGE CONTENT-->
+        <div role="main" class="ui-content"  >
+        	<h1>Terms & Conditions</h1> 
+              <br>
+			<p>Use this at your own risk</p>
+        </div>        
+        <!-- end page content -->
+		
+		
+		<!--Terms & Conditions PAGE FOOTER-->
+        <div data-role="footer" data-position="fixed" >
+        <p align="center">©Ryan Poole 2018,  <a href="#T&C" > Terms & Conditions</a></p>
+        </div><!-- /footer -->
+        
+	</div><!-- /end Terms & Conditions page -->
+        
+  
+</body>
+</html>
