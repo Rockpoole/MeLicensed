@@ -129,7 +129,23 @@ This page is a sample website, with multiple pages within one page
 
 		<!--licence PAGE CONTENT-->
         <div role="main" class="ui-content"  >
-        	 <h1 style="color:darkblue;text-align:left">Licences</h1>
+          <table width=100%>
+            <tr>
+            <td>
+        	      <h1 style="color:darkblue;text-align:left">Licences</h1>
+            </td>
+            <td>
+              <h2 align="right" style="color:darkblue"> Want To Add A New Licence? <a style="color:dodgerblue" href="#AddLicences"> Click Here</a> </h2>
+            </td>
+          </tr>
+        </table>
+
+        <form>
+          <label for="search-1">Search for a Licence:</label>
+            <input type="search" name="search-1" id="search-1" value="">
+        </form>
+           <br><br>
+
            <a href="#Drivers" style="background-color:dodgerblue;color:white"
      			   class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-bottom ui-btn-active">Driver's Licence</a>
              <br><br>
@@ -138,8 +154,6 @@ This page is a sample website, with multiple pages within one page
              <br><br>
            <a href="#Hunting" style="background-color:dodgerblue;color:white"
              class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-bottom ui-btn-active">Hunting Licence</a>
-            <p>Add licence details, licence Images, and licence scroll bar</p>
-            <br>
         </div>
         <!-- end page content -->
 
@@ -151,34 +165,34 @@ This page is a sample website, with multiple pages within one page
 
 	</div><!-- /end licence page -->
 
-  <!--PAGE: Licence Editing PAGE  -->
-  <div data-role="page" id="LicenceEdit">
+  <!--PAGE: Drivers Licence Editing PAGE  -->
+  <div data-role="page" id="DriversLicenceEdit">
       <!-----------PANEL--------------------->
-      <div data-role="panel" id="LicenceEditPage" data-position="left" data-display="reveal">
+      <div data-role="panel" id="DriversLicenceEditPage" data-position="left" data-display="reveal">
         <ul data-role="listview" data-inset="true" data-split-icon="gear">
            <li> <a style="color:dodgerblue" href="#home">Home</a></li>
            <li> <a style="color:dodgerblue"href="#info">Info</a></li>
            <li> <a style="color:dodgerblue"href="#Licences">Licence</a></li>
         </ul>
-            <a class="ui-btn ui-shadow ui-corner-all  ui-btn-mini" style="color:red" href="#LicenceEditPage">Close</a>
+            <a class="ui-btn ui-shadow ui-corner-all  ui-btn-mini" style="color:red" href="#DriversLicenceEditPage">Close</a>
       </div><!-- /panel -->
 
-  <!--Licence Editing PAGE NAVIGATIONAL HEADER-->
+  <!--Drivers Licence Editing PAGE NAVIGATIONAL HEADER-->
   <div data-role="header" >
-      <a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-left ui-btn-icon-left ui-icon-bars" style="color:dodgerblue" href="#LicenceEditPage">Menu</a>
+      <a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-left ui-btn-icon-left ui-icon-bars" style="color:dodgerblue" href="#DriversLicenceEditPage">Menu</a>
       <a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-right ui-btn-icon-right ui-icon-user"  style="color:dodgerblue" href="#login">Login</a>
       <h1 style="color:darkblue;text-align:center">MeLicensed</h1>
     </div><!-- /header -->
 
-  <!--Licence Edit PAGE CONTENT-->
+  <!--Drivers Licence Edit PAGE CONTENT-->
   <div role="main" class="ui-content"  >
-      <h1 style="color:darkblue;text-align:left">Licence Editing</h1>
+      <h3 style="color:darkblue;text-align:left">Edit Your Drivers Licence Here:</h3>
       <br>
   </div>
       <!-- end page content -->
 
 
-  <!--Licence Edit PAGE FOOTER-->
+  <!--Drivers Licence Edit PAGE FOOTER-->
       <div data-role="footer" data-position="fixed" >
       <p align="center">©Ryan Poole 2018,  <a href="#LicenceEdit" > Terms & Conditions</a></p>
       </div><!-- /footer -->
@@ -188,18 +202,18 @@ This page is a sample website, with multiple pages within one page
      <!--PAGE: Driver's Licence PAGE  -->
          <div data-role="page" id="Drivers">
              <!-----------PANEL--------------------->
-             <div data-role="panel" id="Drivers Page" data-position="left" data-display="reveal">
+             <div data-role="panel" id="DriversPage" data-position="left" data-display="reveal">
          		  <ul data-role="listview" data-inset="true" data-split-icon="gear">
                   <li> <a style="color:dodgerblue" href="#home">Home</a></li>
                   <li> <a style="color:dodgerblue"href="#info">Info</a></li>
        				   <li> <a style="color:dodgerblue"href="#Licences">Licence</a></li>
                </ul>
-                   <a class="ui-btn ui-shadow ui-corner-all  ui-btn-mini" style="color:red" href="#Driver's Page">Close</a>
+                   <a class="ui-btn ui-shadow ui-corner-all  ui-btn-mini" style="color:red" href="#DriversPage">Close</a>
              </div><!-- /panel -->
 
      		<!--Driver's Licence PAGE NAVIGATIONAL HEADER-->
          <div data-role="header" >
-             <a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-left ui-btn-icon-left ui-icon-bars" style="color:dodgerblue" href="#Drivers Page">Menu</a>
+             <a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-left ui-btn-icon-left ui-icon-bars" style="color:dodgerblue" href="#DriversPage">Menu</a>
              <a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-right ui-btn-icon-right ui-icon-user"  style="color:dodgerblue" href="#login">Login</a>
              <h1 style="color:darkblue;text-align:center">MeLicensed</h1>
           	</div><!-- /header -->
@@ -210,7 +224,7 @@ This page is a sample website, with multiple pages within one page
                    <br><br>
                <img src="./images/Blank Drivers Licence.jpg" width="30%" alt="MeLicensed"/>
                    <br><br>
-              <p> Want to edit your licence? <a href="#LicenceEdit"> Click Here</a></p>
+              <p> Want to edit your licence? <a href="#DriversLicenceEdit"> Click Here</a></p>
              </div>
      		<!-- Driver's Licence PAGE FOOTER-->
              <div data-role="footer" data-position="fixed" >
@@ -240,7 +254,8 @@ This page is a sample website, with multiple pages within one page
              		<!-- Boating Licence PAGE CONTENT-->
                      <div role="main" class="ui-content"  >
                      	 <h1 style="color:darkblue;text-align:left">Boating Licence</h1>
-                           <br>
+                         <br><br>
+                       <p> Want to edit your licence? <a href="#DriversLicenceEdit"> Click Here</a></p>
                      </div>
              		<!-- Boating Licence Page PAGE FOOTER-->
                      <div data-role="footer" data-position="fixed" >
@@ -270,8 +285,10 @@ This page is a sample website, with multiple pages within one page
                    		<!-- Hunting Licence PAGE CONTENT-->
                            <div role="main" class="ui-content"  >
                            	 <h1 style="color:darkblue;text-align:left">Hunting Licence</h1>
-                             <br><br>
+                               <br><br>
                              <img src="./images/Hunting Licence.jpg" width="30%" alt="MeLicensed"/>
+                               <br><br>
+                              <p> Want to edit your licence? <a href="#DriversLicenceEdit"> Click Here</a></p>
                            </div>
                    		<!-- Hunting Licence PAGE FOOTER-->
                            <div data-role="footer" data-position="fixed" >
@@ -279,6 +296,56 @@ This page is a sample website, with multiple pages within one page
                            </div><!-- /footer -->
                            <!-- end page content -->
                          </div>
+
+                         <!--PAGE: Add Licence PAGE  -->
+                         <div data-role="page" id="AddLicences">
+                             <!-----------PANEL--------------------->
+                             <div data-role="panel" id="AddLicencesPage" data-position="left" data-display="reveal">
+                         		<ul data-role="listview" data-inset="true" data-split-icon="gear">
+                                <li> <a style="color:dodgerblue" href="#home">Home</a></li>
+                                <li> <a style="color:dodgerblue"href="#info">Info</a></li>
+                                <li> <a style="color:dodgerblue"href="#Licences">Licence</a></li>
+                              </ul>
+                                <a class="ui-btn ui-shadow ui-corner-all  ui-btn-mini" style="color:red" href="#AddLicencesPage">Close</a>
+                             </div><!-- /panel -->
+
+                     		<!--Add Licence PAGE NAVIGATIONAL HEADER-->
+                         <div data-role="header" >
+                             <a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-left ui-btn-icon-left ui-icon-bars" style="color:dodgerblue" href="#AddLicencesPage">Menu</a>
+                             <a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-right ui-btn-icon-right ui-icon-user"  style="color:dodgerblue" href="#login">Login</a>
+                             <h1 style="color:darkblue;text-align:center">MeLicensed</h1>
+                          	</div><!-- /header -->
+
+                <!--Add Licence PAGE CONTENT-->
+                      <div role="main" class="ui-content">
+                            <h1 style="color:darkblue;text-align:left">Add a Licence</h1>
+                            <form>
+                             <fieldset data-role="controlgroup" data-type="horizontal">
+                                  <label for="select-native-11">Select A</label>
+                                <select name="select-native-11" id="select-native-11">
+                                    <option value="#">Select a Licence</option>
+                                    <option value="#">Drivers</option>
+                                    <option value="#">Boating</option>
+                                    <option value="#">Hunting</option>
+                                </select>
+                              </fieldset>
+                            </form>
+                            <br><br>
+                            <label for="FirstName">First Name:</label>
+                       <input type="text" name="FirstName" id="FirstName" placeholder="Your First Name" data-mini="true" >
+                       <label for="Surname">Surname:</label>
+                  <input type="text" name="surname" id="Surname" placeholder="Your Surname" data-mini="true" >
+                             </div>
+                             <!-- end page content -->
+
+
+                     		<!--Add Licence PAGE FOOTER-->
+                             <div data-role="footer" data-position="fixed" >
+                             <p align="center">©Ryan Poole 2018,  <a href="#T&C"> Terms & Conditions</a></p>
+                             </div><!-- /footer -->
+
+                     	</div><!-- /end licence page -->
+
 
 	<!--PAGE: login  PAGE  -->
     <div data-role="page" id="login">
